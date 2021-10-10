@@ -7,6 +7,7 @@ import Reserva from "./Components/Reserva";
 import NavBar from "./Components/Nav";
 import Conocenos from "./Components/Conocenos";
 import TeEsperamos from "./Components/TeEsperamos";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Regalos />
       <Reserva />
       <TeEsperamos />
+      <Footer />
     </>
   );
 }
