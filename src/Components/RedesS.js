@@ -1,6 +1,5 @@
 import "./Social.css";
 import selfie from "../Assets/selfie.png";
-import historiaVideo from "../Assets/lovevideo.mp4";
 import { Button, Link, Typography } from "@mui/material";
 const RedesS = () => {
   return (
