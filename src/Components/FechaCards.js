@@ -28,26 +28,30 @@ const FechaCards = ({
         {direccion}
       </Typography>
 
-      <Link
-        href={gmapsdir}
-        underline="none"
-        target="_blank"
-        rel="noopener"
-        className="fechaLink"
-      >
-        <Button variant="contained">📍 Como llegar</Button>
-      </Link>
-      <Link
-        href={whatsappdir}
-        underline="none"
-        target="_blank"
-        rel="noopener"
-        className="fechaLink"
-      >
-        <Button variant="contained">
-          <BsWhatsapp /> Agendar
-        </Button>
-      </Link>
+      {gmapsdir && (
+        <Link
+          href={gmapsdir}
+          underline="none"
+          target="_blank"
+          rel="noopener"
+          className="fechaLink"
+        >
+          <Button variant="contained">📍 Como llegar</Button>
+        </Link>
+      )}
+      {whatsappdir && (
+        <Link
+          href={whatsappdir}
+          underline="none"
+          target="_blank"
+          rel="noopener"
+          className="fechaLink"
+        >
+          <Button variant="contained">
+            <BsWhatsapp /> Agendar
+          </Button>
+        </Link>
+      )}
     </div>
   );
 };
