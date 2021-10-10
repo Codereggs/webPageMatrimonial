@@ -9,27 +9,92 @@ import {
   FcPackage,
   FcCalendar,
 } from "react-icons/fc";
+import { Link } from "@mui/material";
 
 export default function NavBar() {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+      <AppBar position="static" color="inherit">
         <Toolbar>
-          <a className="navLink" href="/">
+          <Link
+            onClick={() => {
+              document
+                .getElementById("inicio")
+                .scrollIntoView({ behavior: "smooth" });
+            }}
+            underline="none"
+            target="_blank"
+            rel="noopener"
+            className="fechaLink"
+          >
             <FcHome /> Inicio
-          </a>
-          <a className="navLink" href="/">
+          </Link>
+
+          <Link
+            onClick={() => {
+              document
+                .getElementById("inicio")
+                .scrollIntoView({ behavior: "smooth" });
+            }}
+            underline="none"
+            target="_blank"
+            rel="noopener"
+            className="fechaLink"
+          >
+            <FcHome /> Inicio
+          </Link>
+          <Link
+            onClick={() => {
+              document
+                .getElementById("inicio")
+                .scrollIntoView({ behavior: "smooth" });
+            }}
+            underline="none"
+            target="_blank"
+            rel="noopener"
+            className="fechaLink"
+          >
             <FcClock /> Fecha
-          </a>
-          <a className="navLink" href="/">
+          </Link>
+          <Link
+            onClick={() => {
+              document
+                .getElementById("inicio")
+                .scrollIntoView({ behavior: "smooth" });
+            }}
+            underline="none"
+            target="_blank"
+            rel="noopener"
+            className="fechaLink"
+          >
             <FcMindMap /> Redes Sociales
-          </a>
-          <a className="navLink" href="/">
+          </Link>
+          <Link
+            onClick={() => {
+              document
+                .getElementById("inicio")
+                .scrollIntoView({ behavior: "smooth" });
+            }}
+            underline="none"
+            target="_blank"
+            rel="noopener"
+            className="fechaLink"
+          >
             <FcPackage /> Regalos
-          </a>
-          <a className="navLink" href="/">
+          </Link>
+          <Link
+            onClick={() => {
+              document
+                .getElementById("inicio")
+                .scrollIntoView({ behavior: "smooth" });
+            }}
+            underline="none"
+            target="_blank"
+            rel="noopener"
+            className="fechaLink"
+          >
             <FcCalendar /> Reserva
-          </a>
+          </Link>
         </Toolbar>
       </AppBar>
     </Box>

@@ -4,7 +4,7 @@ import "./Reserva.css";
 
 const Reserva = () => {
   return (
-    <section className="reserva">
+    <section className="reserva" id="reserva">
       <Container className="rContainer">
         <Typography variant="h2">RSVP</Typography>
         <Typography variant="h2">

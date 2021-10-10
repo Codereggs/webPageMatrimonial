@@ -3,7 +3,7 @@ import selfie from "../Assets/selfie.png";
 import { Button, Link, Typography } from "@mui/material";
 const RedesS = () => {
   return (
-    <div className="social">
+    <section className="social" id="redes">
       <img className="selfie" src={selfie} alt="selfie" />
       <Typography variant={"h2"}># BodaRafaelYMaritza</Typography>
       <Typography variant={"h5"}>
@@ -12,7 +12,7 @@ const RedesS = () => {
       <Link>
         <Button variant="outlined">Ve nuestras fotos en Instagram</Button>
       </Link>
-    </div>
+    </section>
   );
 };
 

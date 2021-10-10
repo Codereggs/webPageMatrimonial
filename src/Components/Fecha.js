@@ -6,7 +6,7 @@ import { Typography } from "@mui/material";
 
 const Fecha = () => {
   return (
-    <div className="fechaContainer">
+    <section className="fechaContainer" id="fecha">
       <Typography variant={"h4"} align="center">
         TE INVITAMOS A QUE NOS ACOMPAÑES EN ESTE GRAN DÍA
       </Typography>
@@ -34,7 +34,7 @@ const Fecha = () => {
         titulo="Código de vestimenta"
         localidad="Elegante"
       />
-    </div>
+    </section>
   );
 };
 

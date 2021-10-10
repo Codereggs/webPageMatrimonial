@@ -7,7 +7,7 @@ const Inicio = () => {
   }, []);
 
   return (
-    <div className="inicio">
+    <div className="inicio" id="inicio">
       <div className="inicioData">
         <h1>Rafa & Mary</h1>
         <h3>¡Nos casamos!</h3>

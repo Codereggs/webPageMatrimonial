@@ -4,7 +4,7 @@ import "./Regalos.css";
 
 const Regalos = () => {
   return (
-    <section className="regalos">
+    <section className="regalos" id="regalos">
       <GrGift className="giftIcon" />
       <Typography variant="h2">
         Lo más importante para nosotros es tu presencia en este día especial...

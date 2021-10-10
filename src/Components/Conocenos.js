@@ -33,10 +33,8 @@ const Conocenos = () => {
     : xs
     ? "200px"
     : null;
-  console.log(height);
-  console.log(xs, md, lg, xl);
   return (
-    <section className="conocenos">
+    <section className="conocenos" id="conocenos">
       <Typography variant={"h3"}>Conoce nuestra historia...</Typography>
       <VideoQuery height={height} />
     </section>
