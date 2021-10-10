@@ -6,6 +6,7 @@ import Regalos from "./Components/Regalos";
 import Reserva from "./Components/Reserva";
 import NavBar from "./Components/Nav";
 import Conocenos from "./Components/Conocenos";
+import TeEsperamos from "./Components/TeEsperamos";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Conocenos />
       <Regalos />
       <Reserva />
+      <TeEsperamos />
     </>
   );
 }
