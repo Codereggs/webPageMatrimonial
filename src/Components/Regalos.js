@@ -6,7 +6,7 @@ const Regalos = () => {
   return (
     <section className="regalos" id="regalos">
       <GrGift className="giftIcon" />
-      <Container fluid>
+      <Container>
         <Typography variant="h2" color="#f87c5a">
           Lo más importante para nosotros es tu presencia en este día
           especial... Pero si algo gustas regalar, en efectivo lo sabremos
