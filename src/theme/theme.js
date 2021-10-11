@@ -19,11 +19,10 @@ const theme = createTheme({
       main: "#f87c5a",
     },
     secondary: {
-      main: "#9AC9FB",
-      dark: "#4A85C3",
+      main: "#a3a3a3",
     },
     neutral: {
-      main: "#FAFA88",
+      main: "#fff",
     },
   },
   typography: {
@@ -37,6 +36,10 @@ const theme = createTheme({
     h4: { fontFamily: "Pacifico" },
     h5: { fontFamily: "Pacifico" },
     h6: { fontFamily: "Pacifico" },
+    body1: {
+      color: "#a3a3a3",
+      fontWeight: 600,
+    },
     fontFamily: "Montserrat",
     fontWeightLight: 300,
     fontWeightRegular: 400,
