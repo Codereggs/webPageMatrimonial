@@ -16,10 +16,13 @@ const theme = createTheme({
   },
   palette: {
     primary: {
-      main: "#f87c5a",
+      main: "#44db04",
     },
     secondary: {
       main: "#a3a3a3",
+    },
+    third: {
+      main: "#44db04",
     },
     neutral: {
       main: "#fff",
@@ -34,17 +37,26 @@ const theme = createTheme({
     },
     h3: { fontFamily: "Pacifico" },
     h4: { fontFamily: "Pacifico" },
-    h5: { fontFamily: "Pacifico" },
-    h6: { fontFamily: "Pacifico" },
+    h5: {
+      fontWeight: 600,
+    },
     body1: {
       color: "#a3a3a3",
       fontWeight: 600,
     },
+    button: {
+      fontWeight: 600,
+      fontSize: "0.8em",
+    },
+    color: "#a3a3a3",
     fontFamily: "Montserrat",
     fontWeightLight: 300,
     fontWeightRegular: 400,
     fontWeightMedium: 500,
     fontWeightBold: 600,
+  },
+  shape: {
+    borderRadius: 10,
   },
 });
 

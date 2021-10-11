@@ -12,10 +12,13 @@ const FechaCards = ({
   gmapsdir,
   whatsappdir,
 }) => {
+  const style = {
+    color: "#f87c5a",
+  };
   return (
     <div className="fecha">
       {icono}
-      <Typography variant={"h3"} align="center">
+      <Typography variant={"h3"} style={style} align="center">
         {titulo}
       </Typography>
       <Typography variant={"h5"} align="center">
@@ -27,7 +30,7 @@ const FechaCards = ({
       <Typography variant={"h5"} align="center">
         {direccion}
       </Typography>
-
+      <br />
       {gmapsdir && (
         <Link
           href={gmapsdir}
@@ -39,6 +42,7 @@ const FechaCards = ({
           <Button variant="contained">📍 Como llegar</Button>
         </Link>
       )}
+      <br />
       {whatsappdir && (
         <Link
           href={whatsappdir}
@@ -47,9 +51,7 @@ const FechaCards = ({
           rel="noopener"
           className="fechaLink"
         >
-          <Button variant="contained">
-            <BsWhatsapp /> Agendar
-          </Button>
+          <Button variant="contained">📞 Agendar</Button>
         </Link>
       )}
     </div>

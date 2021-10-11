@@ -35,7 +35,9 @@ const Conocenos = () => {
     : null;
   return (
     <section className="conocenos" id="conocenos">
-      <Typography variant={"h3"}>Conoce nuestra historia...</Typography>
+      <Typography variant={"h3"} color="#f87c5a">
+        Conoce nuestra historia...
+      </Typography>
       <VideoQuery height={height} />
     </section>
   );

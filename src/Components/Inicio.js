@@ -1,10 +1,10 @@
 import { Typography } from "@mui/material";
 import { useEffect } from "react";
-/* import { temporizador } from "./Temporizador"; */
+import { temporizador } from "./Temporizador";
 
 const Inicio = () => {
   useEffect(() => {
-    /*     temporizador(2021, 12, 11, 0, 0, 0); */
+    temporizador(2021, 12, 11, 0, 0, 0);
   }, []);
 
   return (
@@ -14,7 +14,6 @@ const Inicio = () => {
         <Typography variant="h3">¡Nos casamos!</Typography>
         <div className="count"></div>
       </div>
-      {/*       */}
     </div>
   );
 };
