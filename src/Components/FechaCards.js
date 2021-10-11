@@ -1,6 +1,5 @@
 import { Button, Typography } from "@mui/material";
 import Link from "@mui/material/Link";
-import { BsWhatsapp } from "react-icons/bs";
 import "./Fecha.css";
 
 const FechaCards = ({
