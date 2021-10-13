@@ -20,13 +20,13 @@ const FechaCards = ({
       <Typography variant={"h3"} style={style} align="center">
         {titulo}
       </Typography>
-      <Typography variant={"h5"} align="center">
+      <Typography variant={"h5"} align="center" color="secondary">
         {localidad}
       </Typography>
-      <Typography variant={"h5"} align="center">
+      <Typography variant={"h5"} align="center" color="secondary">
         {fecha}
       </Typography>
-      <Typography variant={"h5"} align="center">
+      <Typography variant={"h5"} align="center" color="secondary">
         {direccion}
       </Typography>
       <br />
@@ -50,7 +50,7 @@ const FechaCards = ({
           rel="noopener"
           className="fechaLink"
         >
-          <Button variant="contained">📞 Agendar</Button>
+          <Button variant="contained">📞 Confirmar</Button>
         </Link>
       )}
     </div>

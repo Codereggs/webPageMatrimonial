@@ -39,6 +39,7 @@ export function temporizador(
 
   const countDown = () => {
     //Definición de todos los parámetros
+    let countDownDate = new Date(2021, 12, 11, 0, 0, 0).getTime();
     let nowTime = new Date().getTime(),
       distance = countDownDate - nowTime,
       yearCountDown = Math.floor(
