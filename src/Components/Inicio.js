@@ -1,5 +1,4 @@
 import { Typography } from "@mui/material";
-import { useEffect } from "react";
 import { Temporizador } from "./ReactTemporizador";
 
 const Inicio = () => {
