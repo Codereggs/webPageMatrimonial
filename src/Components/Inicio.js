@@ -1,5 +1,6 @@
-import { Typography } from "@mui/material";
+import { Link, Typography } from "@mui/material";
 import { Temporizador } from "./ReactTemporizador";
+import { FaAngleDown } from "react-icons/fa";
 
 const Inicio = () => {
   const style = { backgroundColor: "rgba(0,0,0, 0.5)" };
@@ -14,6 +15,20 @@ const Inicio = () => {
           ¡Nos casamos!
         </Typography>
         <Temporizador />
+      </div>
+      <div className="dArrow">
+        <Link
+          onClick={() => {
+            document
+              .getElementById("fecha")
+              .scrollIntoView({ behavior: "smooth" });
+          }}
+          underline="none"
+          className="dArrowLink"
+          color="#fff"
+        >
+          <FaAngleDown />
+        </Link>
       </div>
     </div>
   );

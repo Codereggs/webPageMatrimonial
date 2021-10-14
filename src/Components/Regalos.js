@@ -1,6 +1,6 @@
 import { Container, Typography } from "@mui/material";
-import { GrGift } from "react-icons/gr";
 import useMediaQuery from "@mui/material/useMediaQuery";
+import regalos from "../Assets/regalosP.png";
 import "./Regalos.css";
 
 const Regalos = () => {
@@ -11,7 +11,7 @@ const Regalos = () => {
   let res = xl ? "h3" : lg ? "h4" : md ? "h5" : xs ? "h5" : null;
   return (
     <section className="regalos" id="regalos">
-      <GrGift className="giftIcon" />
+      <img src={regalos} alt="regalos" className="giftIcon" />
       <Container>
         <Typography variant={res} color="#f87c5a">
           Lo más importante para nosotros es tu presencia en este día

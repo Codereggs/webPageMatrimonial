@@ -50,7 +50,7 @@ export default function NavBar() {
           <Link
             onClick={() => {
               document
-                .getElementById("inicio")
+                .getElementById("toolbar")
                 .scrollIntoView({ behavior: "smooth" });
             }}
             component="button"
@@ -129,7 +129,7 @@ export default function NavBar() {
           </Link>
         </Toolbar>
       </AppBar>
-      <Toolbar />
+      <Toolbar id="toolbar" />
     </Box>
   );
 }
