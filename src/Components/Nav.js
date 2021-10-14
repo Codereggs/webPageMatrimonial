@@ -13,10 +13,8 @@ import {
 import { Link, useMediaQuery } from "@mui/material";
 
 export default function NavBar() {
-  const xs = useMediaQuery("(min-width:0px)");
   const md = useMediaQuery("(min-width:426px)");
-  const lg = useMediaQuery("(min-width:769px)");
-  const xl = useMediaQuery("(min-width:2561px)");
+
   return (
     <Box
       sx={{
