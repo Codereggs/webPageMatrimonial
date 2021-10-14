@@ -55,7 +55,18 @@ const Reserva = () => {
           ¡Contáctanos por Whatsapp para confirmar tu asistencia!
         </Typography>
 
-        <Link underline="none">
+        <Link
+          underline="none"
+          style={{
+            display: "inherit",
+            alignItems: "inherit",
+            justifyContent: "center",
+            flexDirection: "column",
+          }}
+        >
+          <Typography variant="body1" component="label" color="#000">
+            Hacé click para confirmar
+          </Typography>
           <Button
             style={{
               backgroundColor: "#25cc64",
