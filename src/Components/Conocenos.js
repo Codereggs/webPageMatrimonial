@@ -31,11 +31,15 @@ const Conocenos = () => {
     : md
     ? "250px"
     : xs
-    ? "200px"
+    ? "150px"
     : null;
   return (
     <section className="conocenos" id="conocenos">
-      <Typography variant={"h3"} color="#f87c5a">
+      <Typography
+        variant={"h3"}
+        color="#f87c5a"
+        style={{ textAlign: "center", marginTop: "4rem" }}
+      >
         Conoce nuestra historia...
       </Typography>
       <VideoQuery height={height} />

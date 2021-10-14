@@ -11,6 +11,7 @@ const Footer = () => {
         alignItems: "center",
         justifyContent: "center",
         flexDirection: "column",
+        fontWeight: 600,
       }}
     >
       By Codereggs - &copy; 2021 | Made with ❤️

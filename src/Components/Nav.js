@@ -10,9 +10,11 @@ import {
   FcPackage,
   FcCalendar,
 } from "react-icons/fc";
-import { Link } from "@mui/material";
+import { Link, useMediaQuery } from "@mui/material";
 
 export default function NavBar() {
+  const md = useMediaQuery("(min-width:426px)");
+
   return (
     <Box
       sx={{
@@ -22,18 +24,31 @@ export default function NavBar() {
       <AppBar
         position="fixed"
         color="inherit"
-        sx={{
+        style={{
           display: "flex",
-          flexDirection: "column",
-          alignItems: "flex-end",
-          justifyContent: "flex-end",
+          flexDirection: "row",
+          alignItems: "center",
+          justifyContent: "center",
         }}
       >
-        <Toolbar>
+        <Toolbar
+          style={
+            !md
+              ? {
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "center",
+                  justifyContent: "space-evenly",
+                  width: "100%",
+                  padding: 0,
+                }
+              : {}
+          }
+        >
           <Link
             onClick={() => {
               document
-                .getElementById("inicio")
+                .getElementById("toolbar")
                 .scrollIntoView({ behavior: "smooth" });
             }}
             component="button"
@@ -41,9 +56,10 @@ export default function NavBar() {
             color="secondary"
             underline="none"
             className="fechaLink"
+            style={md ? { fontSize: "1em" } : { fontSize: "1.5em" }}
             sx={{ padding: "0 0.5rem" }}
           >
-            <FcHome /> Inicio
+            <FcHome /> {md && "Inicio"}
           </Link>
           <Link
             onClick={() => {
@@ -56,9 +72,10 @@ export default function NavBar() {
             color="secondary"
             underline="none"
             className="fechaLink"
+            style={md ? { fontSize: "1em" } : { fontSize: "1.5em" }}
             sx={{ padding: "0 0.5rem" }}
           >
-            <FcClock /> Fecha
+            <FcClock /> {md && "Fecha"}
           </Link>
           <Link
             onClick={() => {
@@ -71,9 +88,10 @@ export default function NavBar() {
             color="secondary"
             underline="none"
             className="fechaLink"
+            style={md ? { fontSize: "1em" } : { fontSize: "1.5em" }}
             sx={{ padding: "0 0.5rem" }}
           >
-            <FcMindMap /> Redes Sociales
+            <FcMindMap /> {md && "Redes Sociales"}
           </Link>
           <Link
             onClick={() => {
@@ -86,9 +104,10 @@ export default function NavBar() {
             color="secondary"
             underline="none"
             className="fechaLink"
+            style={md ? { fontSize: "1em" } : { fontSize: "1.5em" }}
             sx={{ padding: "0 0.5rem" }}
           >
-            <FcPackage /> Regalos
+            <FcPackage /> {md && "Regalos"}
           </Link>
           <Link
             onClick={() => {
@@ -101,13 +120,14 @@ export default function NavBar() {
             color="secondary"
             underline="none"
             className="fechaLink"
+            style={md ? { fontSize: "1em" } : { fontSize: "1.5em" }}
             sx={{ padding: "0 0.5rem" }}
           >
-            <FcCalendar /> Reserva
+            <FcCalendar /> {md && "Reserva"}
           </Link>
         </Toolbar>
       </AppBar>
-      <Toolbar />
+      <Toolbar id="toolbar" />
     </Box>
   );
 }

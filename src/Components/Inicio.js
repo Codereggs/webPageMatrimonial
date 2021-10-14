@@ -1,18 +1,34 @@
-import { Typography } from "@mui/material";
-import { useEffect } from "react";
-import { temporizador } from "./Temporizador";
+import { Link, Typography } from "@mui/material";
+import { Temporizador } from "./ReactTemporizador";
+import { FaAngleDown } from "react-icons/fa";
 
 const Inicio = () => {
-  useEffect(() => {
-    temporizador(2021, 12, 11, 0, 0, 0);
-  }, []);
+  const style = { backgroundColor: "rgba(0,0,0, 0.5)" };
 
   return (
     <div className="inicio" id="inicio">
       <div className="inicioData">
-        <Typography variant="h1">Rafa & Mary</Typography>
-        <Typography variant="h3">¡Nos casamos!</Typography>
-        <div className="count"></div>
+        <Typography variant="h1" style={style}>
+          Rafa & Mary
+        </Typography>
+        <Typography variant="h3" style={style}>
+          ¡Nos casamos!
+        </Typography>
+        <Temporizador />
+      </div>
+      <div className="dArrow">
+        <Link
+          onClick={() => {
+            document
+              .getElementById("fecha")
+              .scrollIntoView({ behavior: "smooth" });
+          }}
+          underline="none"
+          className="dArrowLink"
+          color="#fff"
+        >
+          <FaAngleDown />
+        </Link>
       </div>
     </div>
   );

@@ -9,13 +9,13 @@ const Reserva = () => {
   return (
     <section className="reserva" id="reserva">
       <Container className="rContainer">
-        <Typography variant="h2" style={style}>
+        <Typography variant="h2" style={style} color="#f87c5a">
           RSVP
         </Typography>
-        <Typography variant="h5" style={style}>
-          - Se ruega por favor confirmar antes del 20 de Noviembre -
+        <Typography variant="h5" style={style} color="secondary">
+          - Se ruega por favor confirmar antes del 16 de Noviembre -
         </Typography>
-        <Typography variant="h5" style={style}>
+        <Typography variant="h5" style={style} color="secondary">
           ¡Contáctanos por Whatsapp para confirmar tu asistencia!
         </Typography>
 
@@ -25,7 +25,14 @@ const Reserva = () => {
           rel="noopener"
           href="https://api.whatsapp.com/send?phone=541127601029&text=Hola!%20Felicidades%20por%20el%20compromiso,%20gracias%20por%20invitarme%20a%20la%20boda,%20te%20confirmo%20mi%20asistencia%20el%2011%20de%20Diciembre,%20para%20compartir%20con%20ustedes%20este%20momento%20tan%20especial."
         >
-          <Button style={style}>
+          <Button
+            style={{
+              backgroundColor: "#25cc64",
+              margin: "1.5rem auto",
+              color: "#fff",
+            }}
+            variant="contained"
+          >
             <BsWhatsapp className="rWIcon" />
           </Button>
         </Link>
