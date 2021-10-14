@@ -1,5 +1,6 @@
 .social {
-  height: 120vh;
+  padding: 5rem 0;
+  height: 95vh;
   background-image: url("../Assets/fondo3.jpg");
   background-size: cover;
   background-attachment: fixed;
@@ -11,5 +12,11 @@
 }
 
 .selfie {
-  width: 15rem;
+  width: 8rem;
+}
+
+@media screen and (min-width: 768px) {
+  .selfie {
+    width: 15rem;
+  }
 }
