@@ -12,7 +12,7 @@ const Regalos = () => {
   return (
     <section className="regalos" id="regalos">
       <img src={regalos} alt="regalos" className="giftIcon" />
-      <Container>
+      <Container className="regalosC">
         <Typography variant={res} color="#f87c5a">
           Lo más importante para nosotros es tu presencia en este día
           especial... Pero si algo gustas regalar, en efectivo lo sabremos
