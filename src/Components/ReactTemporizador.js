@@ -2,14 +2,14 @@ import { Typography, useMediaQuery } from "@mui/material";
 import { useEffect, useState } from "react";
 
 export const Temporizador = () => {
-  const [meses, setMeses] = useState();
-  const [dias, setDias] = useState();
-  const [minutos, setMinutos] = useState();
+  const [meses, setMeses] = useState(null);
+  const [dias, setDias] = useState(null);
+  const [minutos, setMinutos] = useState(null);
   const [horas, setHoras] = useState(null);
   const [segundos, setSegundos] = useState(null);
 
   const countDown = () => {
-    let init = new Date(2021, 12, 11, 0, 0, 0).getTime();
+    let init = new Date(2021, 11, 11, 0, 0, 0).getTime();
     let today = new Date().getTime();
     let diferencia = init - today;
 
@@ -81,27 +81,3 @@ export const Temporizador = () => {
     </div>
   );
 };
-/* 
-const countDown = () => {
-  //Definición de todos los parámetros
-  let countDownDate = new Date(2021, 12, 11, 0, 0, 0).getTime();
-  let nowTime = new Date().getTime(),
-    distance = countDownDate - nowTime,
-    yearCountDown = Math.floor(
-      (distance % (1000 * 60 * 60 * 24 * 30.41 * 12 * 10)) /
-        (1000 * 60 * 60 * 24 * 30.41 * 12)
-    ),
-    monthCountDown = Math.floor(
-      (distance % (1000 * 60 * 60 * 24 * 30.41 * 12)) /
-        (1000 * 60 * 60 * 24 * 30.41)
-    ),
-    daysCountDown = Math.floor(
-      (distance % (1000 * 60 * 60 * 24 * 30.41)) / (1000 * 60 * 60 * 24)
-    ),
-    hoursCountDown = Math.floor(
-      (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-    ),
-    minutesCountDown = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
-    secondsCountDown = Math.floor((distance % (1000 * 60)) / 1000);
-};
- */
