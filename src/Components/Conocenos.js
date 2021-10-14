@@ -38,7 +38,7 @@ const Conocenos = () => {
       <Typography
         variant={"h3"}
         color="#f87c5a"
-        style={{ textAlign: "center", marginTop: "4rem" }}
+        style={{ textAlign: "center", margin: "4rem 0" }}
       >
         Conoce nuestra historia...
       </Typography>
