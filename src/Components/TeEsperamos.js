@@ -4,7 +4,9 @@ import { Typography } from "@mui/material";
 const TeEsperamos = () => {
   return (
     <section className="teEsperamos">
-      <Typography variant="h2">¡Te esperamos!</Typography>
+      <Typography variant="h2" style={{ textAlign: "center" }}>
+        ¡Te esperamos!
+      </Typography>
     </section>
   );
 };

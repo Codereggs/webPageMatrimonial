@@ -7,7 +7,7 @@ const Inicio = () => {
   return (
     <div className="inicio" id="inicio">
       <div className="inicioData">
-        <Typography variant="h1" color="" style={style}>
+        <Typography variant="h1" style={style}>
           Rafa & Mary
         </Typography>
         <Typography variant="h3" style={style}>

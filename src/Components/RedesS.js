@@ -11,7 +11,7 @@ const RedesS = () => {
   const md = useMediaQuery("(min-width:426px)");
   const lg = useMediaQuery("(min-width:769px)");
   const xl = useMediaQuery("(min-width:2561px)");
-  let res = xl ? "h2" : lg ? "h2" : md ? "h3" : xs ? "h4" : null;
+  let res = xl ? "h2" : lg ? "h2" : md ? "h3" : xs ? "h5" : null;
   return (
     <section className="social" id="redes">
       <Container
@@ -21,6 +21,7 @@ const RedesS = () => {
           alignItems: "inherit",
           justifyContent: "inherit",
           flexDirection: "inherit",
+          textAlign: "center",
         }}
       >
         <img className="selfie" src={selfie} alt="selfie" />
