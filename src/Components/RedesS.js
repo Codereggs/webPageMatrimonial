@@ -2,6 +2,9 @@ import "./Social.css";
 import selfie from "../Assets/selfie.png";
 import { Button, Container, Link, Typography } from "@mui/material";
 import useMediaQuery from "@mui/material/useMediaQuery";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 const RedesS = () => {
   const style = {
     color: "#fff",
@@ -12,6 +15,9 @@ const RedesS = () => {
   const lg = useMediaQuery("(min-width:769px)");
   const xl = useMediaQuery("(min-width:2561px)");
   let res = xl ? "h2" : lg ? "h2" : md ? "h3" : xs ? "h5" : null;
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
     <section className="social" id="redes">
       <Container
@@ -24,11 +30,16 @@ const RedesS = () => {
           textAlign: "center",
         }}
       >
-        <img className="selfie" src={selfie} alt="selfie" />
-        <Typography variant={res} style={style}>
+        <img
+          className="selfie"
+          src={selfie}
+          alt="selfie"
+          data-aos="fade-right"
+        />
+        <Typography variant={res} style={style} data-aos="fade-left">
           #BodaRafaelYMaritza
         </Typography>
-        <Typography variant={"h5"} style={style}>
+        <Typography variant={"h5"} style={style} data-aos="fade-right">
           Usa nuestro hashtag en Instagram para subir tus fotos y videos
         </Typography>
         <Link
@@ -36,6 +47,7 @@ const RedesS = () => {
           underline="none"
           target="_blank"
           rel="noopener"
+          data-aos="fade-left"
         >
           <Button
             variant="outlined"

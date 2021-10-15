@@ -2,8 +2,14 @@ import "./Conocenos.css";
 import { Typography } from "@mui/material";
 import historiaVideo from "../Assets/lovevideo.mp4";
 import useMediaQuery from "@mui/material/useMediaQuery";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const VideoQuery = ({ height }) => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
     <>
       <video
@@ -39,10 +45,11 @@ const Conocenos = () => {
         variant={"h3"}
         color="#f87c5a"
         style={{ textAlign: "center", margin: "4rem 0" }}
+        data-aos="fade-up-right"
       >
         Conoce nuestra historia...
       </Typography>
-      <VideoQuery height={height} />
+      <VideoQuery height={height} data-aos="fade-up-left" />
     </section>
   );
 };

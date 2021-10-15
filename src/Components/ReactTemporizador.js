@@ -1,5 +1,7 @@
 import { Typography, useMediaQuery } from "@mui/material";
 import { useEffect, useState } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 export const Temporizador = () => {
   const [meses, setMeses] = useState(null);
@@ -36,6 +38,7 @@ export const Temporizador = () => {
 
   useEffect(() => {
     setInterval(countDown, 1000);
+    Aos.init({ duration: 2000 });
   }, []);
 
   const textTempStyle = {
@@ -43,7 +46,7 @@ export const Temporizador = () => {
   };
 
   return (
-    <div className="temporizador">
+    <div className="temporizador" data-aos="fade-up">
       {xs && (
         <>
           <div>

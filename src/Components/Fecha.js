@@ -3,8 +3,14 @@ import FechaCards from "./FechaCards";
 import { BiChurch, BiCloset } from "react-icons/bi";
 import { GiGlassCelebration } from "react-icons/gi";
 import { Typography } from "@mui/material";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Fecha = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
     <section className="fechaContainer" id="fecha">
       <Typography
@@ -15,6 +21,7 @@ const Fecha = () => {
           fontFamily: "Montserrat",
           paddingTop: "110px",
         }}
+        data-aos="flip-left"
       >
         TE INVITAMOS A QUE NOS ACOMPAÑES EN ESTE GRAN DÍA
       </Typography>

@@ -1,8 +1,10 @@
 import { Button, Modal, Typography } from "@mui/material";
 import Link from "@mui/material/Link";
 import { Box } from "@mui/system";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./Fecha.css";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const FechaCards = ({
   icono,
@@ -46,12 +48,15 @@ const FechaCards = ({
       margin: "1rem",
     },
   };
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
 
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
   return (
-    <div className="fecha">
+    <div className="fecha" data-aos="flip-left">
       {icono}
       <Typography variant={"h3"} style={style.colorStyle} align="center">
         {titulo}
