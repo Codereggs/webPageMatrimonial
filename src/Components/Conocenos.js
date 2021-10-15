@@ -15,7 +15,6 @@ const VideoQuery = ({ height }) => {
       <video
         className="nuestraHistoria"
         src={historiaVideo}
-        muted
         controls
         loop
         data-smart-video
