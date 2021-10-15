@@ -30,7 +30,7 @@ const Fecha = () => {
         icono={<BiChurch className="cIcon" />}
         titulo="Ceremonia"
         localidad="Parroquia Santa María"
-        fecha="11 de Diciembre del 2021 - 17 hrs."
+        fecha="11 de Diciembre del 2021 - 16:30 hrs."
         direccion="Av. La Plata 286"
         gmapsdir="https://www.google.com.ar/maps/place/Av.+La+Plata+286,+C1184+CABA/@-34.6180872,-58.4287399,19z/data=!3m1!4b1!4m5!3m4!1s0x95bcca5b28d8c90d:0xa4bf84b58531c4b0!8m2!3d-34.6180883!4d-58.4281927"
       />
