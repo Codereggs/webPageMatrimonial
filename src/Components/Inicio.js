@@ -6,7 +6,7 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 const Inicio = () => {
-  const style = { backgroundColor: "rgba(0,0,0, 0.5)" };
+  const style = { backgroundColor: "rgba(0,0,0, 0.5)", margin: "10px" };
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
