@@ -34,12 +34,12 @@ const RedesS = () => {
           className="selfie"
           src={selfie}
           alt="selfie"
-          data-aos="fade-right"
+          data-aos="flip-left"
         />
-        <Typography variant={res} style={style} data-aos="fade-right">
+        <Typography variant={res} style={style} data-aos="flip-right">
           #BodaRafaelYMaritza
         </Typography>
-        <Typography variant={"h5"} style={style} data-aos="fade-right">
+        <Typography variant={"h5"} style={style} data-aos="flip-left">
           Usa nuestro hashtag en Instagram para subir tus fotos y videos
         </Typography>
         <Link
@@ -47,7 +47,7 @@ const RedesS = () => {
           underline="none"
           target="_blank"
           rel="noopener"
-          data-aos="fade-left"
+          data-aos="flip-right"
         >
           <Button
             variant="outlined"
