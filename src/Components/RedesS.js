@@ -34,12 +34,12 @@ const RedesS = () => {
           className="selfie"
           src={selfie}
           alt="selfie"
-          data-aos="fade-left"
+          data-aos="fade-right"
         />
-        <Typography variant={res} style={style} data-aos="fade-left">
+        <Typography variant={res} style={style} data-aos="fade-right">
           #BodaRafaelYMaritza
         </Typography>
-        <Typography variant={"h5"} style={style} data-aos="fade-left">
+        <Typography variant={"h5"} style={style} data-aos="fade-right">
           Usa nuestro hashtag en Instagram para subir tus fotos y videos
         </Typography>
         <Link
