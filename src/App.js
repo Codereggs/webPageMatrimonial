@@ -1,29 +1,20 @@
 import "./App.css";
-import Fecha from "./Components/Fecha";
-import Inicio from "./Components/Inicio";
-import RedesS from "./Components/RedesS";
-import Regalos from "./Components/Regalos";
-import Reserva from "./Components/Reserva";
-import NavBar from "./Components/Nav";
-import Conocenos from "./Components/Conocenos";
-import TeEsperamos from "./Components/TeEsperamos";
-import Footer from "./Components/Footer";
 import { ThemeProvider } from "@mui/material";
 import theme from "./theme/theme";
+import PaginaPresencial from "./Components/PaginaPresencial";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import PaginaDistancia from "./Components/PaginaDistancia";
 
 function App() {
   return (
     <>
       <ThemeProvider theme={theme}>
-        <NavBar />
-        <Inicio />
-        <Fecha />
-        <RedesS />
-        <Conocenos />
-        <Regalos />
-        <Reserva />
-        <TeEsperamos />
-        <Footer />
+        <Router>
+          <Routes>
+            <Route exact path="/" element={<PaginaPresencial />} />
+            <Route path="/distancia" element={<PaginaDistancia />} />
+          </Routes>
+        </Router>
       </ThemeProvider>
     </>
   );

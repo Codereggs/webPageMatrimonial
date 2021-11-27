@@ -32,7 +32,7 @@ const Conocenos = () => {
   let height = xl
     ? "1000px"
     : lg
-    ? "500px"
+    ? "300px"
     : md
     ? "250px"
     : xs

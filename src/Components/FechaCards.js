@@ -13,6 +13,8 @@ const FechaCards = ({
   fecha,
   direccion,
   gmapsdir,
+  youtubedir,
+  zoomdir,
   whatsappdirRafa,
   whatsappdirMary,
 }) => {
@@ -61,6 +63,7 @@ const FechaCards = ({
       <Typography variant={"h3"} style={style.colorStyle} align="center">
         {titulo}
       </Typography>
+      <br />
       <Typography variant={"h5"} align="center" color="secondary">
         {localidad}
       </Typography>
@@ -70,6 +73,30 @@ const FechaCards = ({
       <Typography variant={"h5"} align="center" color="secondary">
         {direccion}
       </Typography>
+      <br />
+      {zoomdir && (
+        <Link
+          href={zoomdir}
+          underline="none"
+          target="_blank"
+          rel="noopener"
+          className="fechaLink"
+        >
+          <Button variant="contained">📹 Zoom</Button>
+        </Link>
+      )}
+      <br />
+      {youtubedir && (
+        <Link
+          href={youtubedir}
+          underline="none"
+          target="_blank"
+          rel="noopener"
+          className="fechaLink"
+        >
+          <Button variant="contained">▶️ Youtube</Button>
+        </Link>
+      )}
       <br />
       {gmapsdir && (
         <Link
