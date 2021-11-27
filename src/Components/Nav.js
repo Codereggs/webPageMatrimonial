@@ -12,9 +12,9 @@ import {
 } from "react-icons/fc";
 import { Link, useMediaQuery } from "@mui/material";
 
-export default function NavBar() {
+export default function NavBar({ presencial }) {
   const md = useMediaQuery("(min-width:426px)");
-
+  console.log(presencial);
   return (
     <Box
       sx={{
@@ -93,38 +93,42 @@ export default function NavBar() {
           >
             <FcMindMap /> {md && "Redes Sociales"}
           </Link>
-          <Link
-            onClick={() => {
-              document
-                .getElementById("regalos")
-                .scrollIntoView({ behavior: "smooth" });
-            }}
-            component="button"
-            variant="body1"
-            color="secondary"
-            underline="none"
-            className="fechaLink"
-            style={md ? { fontSize: "1em" } : { fontSize: "1.5em" }}
-            sx={{ padding: "0 0.5rem" }}
-          >
-            <FcPackage /> {md && "Regalos"}
-          </Link>
-          <Link
-            onClick={() => {
-              document
-                .getElementById("reserva")
-                .scrollIntoView({ behavior: "smooth" });
-            }}
-            component="button"
-            variant="body1"
-            color="secondary"
-            underline="none"
-            className="fechaLink"
-            style={md ? { fontSize: "1em" } : { fontSize: "1.5em" }}
-            sx={{ padding: "0 0.5rem" }}
-          >
-            <FcCalendar /> {md && "Reserva"}
-          </Link>
+          {presencial && (
+            <Link
+              onClick={() => {
+                document
+                  .getElementById("regalos")
+                  .scrollIntoView({ behavior: "smooth" });
+              }}
+              component="button"
+              variant="body1"
+              color="secondary"
+              underline="none"
+              className="fechaLink"
+              style={md ? { fontSize: "1em" } : { fontSize: "1.5em" }}
+              sx={{ padding: "0 0.5rem" }}
+            >
+              <FcPackage /> {md && "Regalos"}
+            </Link>
+          )}
+          {presencial && (
+            <Link
+              onClick={() => {
+                document
+                  .getElementById("reserva")
+                  .scrollIntoView({ behavior: "smooth" });
+              }}
+              component="button"
+              variant="body1"
+              color="secondary"
+              underline="none"
+              className="fechaLink"
+              style={md ? { fontSize: "1em" } : { fontSize: "1.5em" }}
+              sx={{ padding: "0 0.5rem" }}
+            >
+              <FcCalendar /> {md && "Reserva"}
+            </Link>
+          )}
         </Toolbar>
       </AppBar>
       <Toolbar id="toolbar" />

@@ -11,7 +11,7 @@ import TeEsperamos from "./TeEsperamos";
 const PaginaPresencial = () => {
   return (
     <>
-      <NavBar />
+      <NavBar presencial={true} />
       <Inicio />
       <Fecha />
       <RedesS />
