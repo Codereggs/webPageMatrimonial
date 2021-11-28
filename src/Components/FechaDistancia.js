@@ -36,7 +36,7 @@ const Fecha = () => {
       <FechaCards
         icono={<BiChurch className="cIcon" />}
         titulo="Ceremonia Iglesia"
-        fecha="11 de Diciembre del 2021 - 3:30 pm (🇻🇪) / 16:30 pm (🇦🇷)"
+        fecha="11 de Diciembre del 2021 - 03:30 pm (🇻🇪) / 04:30 pm (🇦🇷)"
         youtubedir="https://youtube.com/c/ParroquiaSantaMaria"
         zoomdir="https://us05web.zoom.us/j/82569608418?pwd=Z1pjYW5FU0tSQ1Jodzc0VmRBT0ExUT09"
       />
