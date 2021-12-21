@@ -9,11 +9,17 @@ export const Temporizador = () => {
   const [minutos, setMinutos] = useState(null);
   const [horas, setHoras] = useState(null);
   const [segundos, setSegundos] = useState(null);
+  const [evento, setEvento] = useState(null);
 
   const countDown = () => {
     let init = new Date(2021, 11, 11, 0, 0, 0).getTime();
     let today = new Date().getTime();
     let diferencia = init - today;
+
+    if (Math.sign(diferencia) === -1) {
+      setEvento(true);
+      return;
+    }
 
     setMeses(
       Math.floor(
@@ -37,17 +43,16 @@ export const Temporizador = () => {
   const lg = useMediaQuery("(min-width:769px)");
 
   useEffect(() => {
-    setInterval(countDown, 1000);
     Aos.init({ duration: 2000 });
+    setInterval(countDown, 1000);
   }, []);
 
   const textTempStyle = {
     backgroundColor: "rgba(0,0,0, 0.5)",
   };
-
   return (
     <div className="temporizador" data-aos="fade-up">
-      {xs && (
+      {evento === false && xs && (
         <>
           <div>
             <div className="tempObj">{meses}</div>
@@ -80,6 +85,17 @@ export const Temporizador = () => {
             </Typography>
           </div>
         </>
+      )}
+      {evento && (
+        <div>
+          <Typography
+            variant="h4"
+            style={{ backgroundColor: "rgba(0,0,0, 0.5)", margin: "10px" }}
+          >
+            <span>🥳</span>
+            ¡Felicidades a los esposos! <span>🥳</span>
+          </Typography>
+        </div>
       )}
     </div>
   );
